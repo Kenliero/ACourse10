@@ -6,29 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mondrian Project</title>
   <style>
+
+    .greys {
+      background-color: #F0F1EC;      
+    }
+
     .redsquare {
       background-color: #E72F24;
+      grid-area: 1 / 1 / 2 / 2;
     }
 
     .greyuppersquare {
-      background-color: #F0F1EC;
+      grid-area: 1 / 2 / 2 / 5;      
     }
 
     .greylowerleftsquare {
-      background-color: #F0F1EC;
+      grid-area: 2 / 1 / 4 / 2;
     }
 
     .greylowerrightsquare {
-      background-color: #F0F1EC;
+      grid-area: 2 / 2 / 4 / 4;
     }    
 
     .bluesquare {
       background-color: #004592;
+      grid-area: 2 / 4 / 3 / 5;
     }
 
     .greysmall {
-      background-color: #F0F1EC;      
+      grid-area: 3 / 3 / 5 / 5;     
     }
+
+    .greybottomsquare { 
+      grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .yellowbottomsquare {
+      background-color: #F9D01E;      
+      grid-area: 4 / 2 / 5 / 3;
+    }    
+
+    .blackbottomsquare {
+      background-color: #232629;      
+      grid-area: 4 / 3 / 5 / 4;
+    } 
+
+
     /* 
     Write your CSS here 
     Gap Colour: #000
@@ -55,11 +78,16 @@
   <!-- Write your HTML here -->
   <div class="maingrid">
     <div class="redsquare"></div>
-    <div class="greyuppersquare"></div>
-    <div class="greylowerleftsquare"></div>
-    <div class="greylowerrightsquare"></div>
+    <div class="greys greyuppersquare"></div>
+    <!--upper / lower -->
+    <div class="greys greylowerleftsquare"></div>
+    <div class="greys greylowerrightsquare"></div>
     <div class="bluesquare"></div>
-    <div class="greysmall"></div>
+    <div class="greys greysmall"></div>
+    <!-- lower / bottom -->
+    <div class="greys greybottomsquare"></div>
+    <div class="yellowbottomsquare"></div>            
+    <div class="blackbottomsquare"></div>         
   </div>
 </body>
 
