@@ -6,6 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mondrian Project</title>
   <style>
+    .redsquare {
+      background-color: #E72F24;
+    }
+
+    .greyuppersquare {
+      background-color: #F0F1EC;
+    }
+
+    .greylowerleftsquare {
+      background-color: #F0F1EC;
+    }
+
+    .greylowerrightsquare {
+      background-color: #F0F1EC;
+    }    
+
+    .bluesquare {
+      background-color: #004592;
+    }
+
+    .greysmall {
+      background-color: #F0F1EC;      
+    }
     /* 
     Write your CSS here 
     Gap Colour: #000
@@ -21,6 +44,7 @@
     */
     .maingrid {
       display: grid;
+      gap: 9;
       grid-template-columns: 320px 198px 153px 50px;
       grid-template-rows: 414px 130px 155px 20px;
     }
@@ -31,18 +55,11 @@
   <!-- Write your HTML here -->
   <div class="maingrid">
     <div class="redsquare"></div>
-    <div class="border big-vertical-line"></div>
     <div class="greyuppersquare"></div>
-    <div class="border blackhorizontalline"></div>
     <div class="greylowerleftsquare"></div>
-    <div class="border lower-vertical-line-left"></div>
     <div class="greylowerrightsquare"></div>
-    <div class="border lower-vertical-line-right"></div>
     <div class="bluesquare"></div>
-    <div class="border fatborderline"></div>
-
-
-
+    <div class="greysmall"></div>
   </div>
 </body>
 
